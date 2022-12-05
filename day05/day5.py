@@ -1,7 +1,7 @@
 import re
 from utils import readinput
 
-matcher = re.compile("move (\d+) from (\d+) to (\d+)")
+matcher = re.compile(r"move (\d+) from (\d+) to (\d+)")
 
 
 def make_crate(lines, index):
