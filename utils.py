@@ -6,9 +6,10 @@ def readgroups(filename='input.txt'):
     return groups
 
 
-def readinput(filename='input.txt'):
+def readinput(filename='input.txt', strip=True):
     lines = open(filename, 'r').readlines()
-    lines = [line.strip() for line in lines]
+    if strip:
+        lines = [line.strip() for line in lines]
     if len(lines) == 1:
         return lines[0]
     return lines
